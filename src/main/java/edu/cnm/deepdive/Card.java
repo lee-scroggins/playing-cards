@@ -23,4 +23,20 @@ public class Card {
     return rank.getSymbol() + suit.getSymbol();
   }
 
+  @Override
+  public int hashCode() {
+    return super.hashCode();
+  }
+
+  @Override
+  public boolean equals(Object obj) {
+    boolean eq = false;
+    if (obj == this) {
+      eq = true;
+    } else if (obj instanceof Card) {
+      Card other = (Card) obj;
+      eq = (this.rank == other.rank && this.suit == other.suit)
+;    }
+    return eq;
+  }
 }
