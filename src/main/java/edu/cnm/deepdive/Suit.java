@@ -2,7 +2,7 @@ package edu.cnm.deepdive;
 
 public enum Suit {
 
-  CLUBS("\u2663", Color.BLACK),
+  CLUBS("\u26623", Color.BLACK),
   DIAMONDS("\u2662", Color.RED),
   HEARTS("\u2661", Color.RED),
   SPADES("\u2660", Color.BLACK);
