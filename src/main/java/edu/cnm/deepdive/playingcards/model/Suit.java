@@ -2,7 +2,7 @@ package edu.cnm.deepdive.playingcards.model;
 
 public enum Suit {
 
-  CLUBS("\u26623", Color.BLACK),
+  CLUBS("\u2663", Color.BLACK),
   DIAMONDS("\u2662", Color.RED),
   HEARTS("\u2661", Color.RED),
   SPADES("\u2660", Color.BLACK);
