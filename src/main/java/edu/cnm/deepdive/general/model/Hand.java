@@ -20,7 +20,7 @@ public class Hand<T> implements Iterable<T> {
 
   public Hand(Collection<T> source) {
     this();
-    elements.addAll(source);
+    addAll(source);
   }
 
   public boolean add(T t) {
@@ -31,7 +31,7 @@ public class Hand<T> implements Iterable<T> {
     return elements.addAll(source);
   }
 
-  public int Size() {
+  public int size() {
     return elements.size();
   }
 
@@ -90,10 +90,10 @@ public class Hand<T> implements Iterable<T> {
     if (this == obj) {
       equal = true;
     } else if (obj instanceof Hand) {
-      //noinspection unchecked
-      equal = elements.equals(((Hand<T>) obj).elements);
+      //noinspection rawtypes
+      equal = elements.equals(((Hand) obj).elements);
     }
-    return elements.equals(obj);
+    return equal;
   }
 
   @Override
@@ -106,4 +106,5 @@ public class Hand<T> implements Iterable<T> {
         .stream()
         .filter(predicate);
   }
+
 }
